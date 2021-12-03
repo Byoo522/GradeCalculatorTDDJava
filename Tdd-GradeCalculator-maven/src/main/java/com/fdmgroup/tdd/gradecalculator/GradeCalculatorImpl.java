@@ -10,7 +10,7 @@ public class GradeCalculatorImpl implements GradeCalculatorService {
 			return "pass";
 		} else if(mark >= 80.00 && mark < 90.00) {
 			return "merit";
-		} else if (mark >= 90.00 && mark < 100.00) {
+		} else if (mark >= 90.00 && mark <= 100.00) {
 			return "dictinction";
 		}
 		return null;
