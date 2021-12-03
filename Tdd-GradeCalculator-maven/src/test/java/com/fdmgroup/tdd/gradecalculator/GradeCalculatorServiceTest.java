@@ -37,7 +37,7 @@ public class GradeCalculatorServiceTest {
 		assertEquals("merit", result);
 	}
 	
-	@Test // >= 90 && < 100
+	@Test // >= 90 && <= 100
 	public void test_GrageCalculatorReturnsMeritWhenGTE90AndLT100() {
 		GradeCalculatorImpl gradeCalc = new GradeCalculatorImpl();
 		String result = gradeCalc.getClassification(90.00);
